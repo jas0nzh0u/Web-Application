@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title%}Home{% endblock %} 
+
+{% block content%}
+
+<div class="jumbotron text-center">
+<h1>Rainbow Flowers</h1>
+</div>
+
+<div>
+   <a href="/items/item1"> <img src="{{ url_for('static', filename=pic1) }}" alt="Red flowers" id="item1" style="width: 50%; height: 50%;" class = "img-thumbnail"></a>
+   <p>{{name1}}</p>
+</div>
+<div>
+   <a href="/items/item2"> <img src="{{ url_for('static', filename=pic2) }}" alt="Pink flowers"id="item2"  style="width: 50%; height: 50%;" class = "img-thumbnail"></a>
+   <p>{{name2}}</p>
+</div>
+<div>
+   <a href="/items/item3"> <img src="{{ url_for('static', filename=pic3) }}" alt="Yellow flowers"id="item3"  style="width: 50%; height: 50%;" class = "img-thumbnail"></a>
+   <p>{{name3}}</p>
+</div>
+<div>
+   <a href="/items/item4"> <img src="{{ url_for('static', filename=pic4) }}" alt="Blue flowers"id="item4"  style="width: 50%; height: 50%;" class = "img-thumbnail"> </a>
+   <p>{{name4}}</p>
+</div>
+
+
+
+{% endblock %}

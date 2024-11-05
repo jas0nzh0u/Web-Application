@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title%} Basket {% endblock %} 
+
+
+{% block content %}
+
+<div class="jumbotron text-center">
+<h2>Basket</h2>
+</div>
+
+
+
+{% for item in products2 %}
+    {% set item_product = product[item.item_id] %}
+    <p>{{ item_product.name }}</p>
+    <!-- <p>{{ item.quantity }}</p> -->
+{% endfor %}
+
+
+<p>Total Price: £{{totalprice}}</p>
+
+<a href = "/payment/payment">Checkout</a>
+{% endblock %}
